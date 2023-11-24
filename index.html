@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lucas Goulart - WebDev</title>
+        <link href="dist/output.css" rel="stylesheet">
+
+    </head>
+    <body class="bg-black">
+
+        <header class="text-green-300 body-font fixed w-full z-50 bg-black">
+            <div
+                class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a
+                    class="flex title-font font-medium items-center text-green-300 mb-4 md:mb-0">
+                    <svg fill="#03811d" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 249" enable-background="new 0 0 256 249" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M47.522,170.287l11.172,76.681h138.612l11.172-76.681H47.522z M128,215.249c-5.748,0-10.407-3.063-10.407-6.84 s4.659-6.84,10.407-6.84c5.748,0,10.407,3.062,10.407,6.84S133.748,215.249,128,215.249z M233.315,233.054h-26.028l10.292-70.639 H38.421l10.292,70.639H22.685c-14.848,0-24.85-15.195-18.978-28.834l36.809-85.489c7.149-16.605,23.493-27.362,41.571-27.362h14.486 l22.885,34.061l4.665-22.254l-7.809-11.807h23.491l-7.81,11.807l4.655,22.098l22.78-33.905h14.486 c18.078,0,34.422,10.757,41.571,27.362l36.808,85.489C258.165,217.858,248.164,233.054,233.315,233.054z M128,2.033 c22.496,0,40.733,18.237,40.733,40.733S150.496,83.498,128,83.498S87.267,65.261,87.267,42.765S105.504,2.033,128,2.033z"></path> </g></svg>
+                    <span class="ml-3 text-xl">Lucas Goulart</span>
+                </a>
+                <nav
+                    class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                    <a href="#" class="mr-5 hover:text-green-600">Sobre</a>
+                    <a href="#linguagens" class="mr-5 hover:text-green-600">Linguagens</a>
+                    <a href="#soft-skills" class="mr-5 hover:text-green-600">Soft-Skills</a>
+                    <a href="#projetos" class="mr-5 hover:text-green-600">Projetos</a>
+                </nav>
+                <button
+                    class="inline-flex items-center bg-green-800 border-0 py-1 px-3 focus:outline-none hover:bg-green-200 hover:text-black rounded text-base mt-4 md:mt-0">Contato
+                    <svg class="inline-block w-4 ml-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z" fill="#1fdb45"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z" fill="#1fdb45"></path> </g></svg>
+                </button>
+            </div>
+        </header>
+
+        <section class="text-green-300 body-font">
+            <div
+                class="container mx-auto flex px-5 py-48 justify-around items-center md:flex-row flex-col">
+                
+                <div
+                    class="lg:max-w-lg lg:w-full md:w-1/2 my-5 w-3/5 mb-24 md:mb-0 lg:mb-0 justify-center flex">
+                    <img
+                        class="object-contain object-center rounded-3xl border-green-300 border-2 h-full"
+                        alt="hero"
+                        src="src/assets/img/profile.png">
+                </div>
+                <div
+                    class="md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    <h1
+                        class="title-font sm:text-4xl text-3xl mb-4 font-medium text-green-300">
+                        Olá! Eu sou o
+                        <br class="hidden lg:inline-block">Lucas Goulart!
+                    </h1>
+                    <p class="mb-4 leading-relaxed">Seja bem-vindo a minha WebPage!!!<br>
+                        Sou um estudante de Análise e Desenvolvimento de Sistemas pela <span class="text-red-600 cursor-pointer">FATEC</span>,
+                        apaixonado por computação desde o berço (fortes influências maternas).
+                        Atualmente trabalho como Analista de Suporte II, um <span class="text-white">Problem Solver</span> apaixonado por "Suportar" meus clientes.
+                        Desejo entrar na área de Desenvolvimento e continuar sendo um Problem Solver,
+                        utilizando a programação para solucionar os problemas dos clientes.
+                    </p>
+
+                    <p class="mb-4 leading-relaxed"><svg class="inline mr-4 h-6" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg"><g
+                            id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round" stroke-linejoin="round"></g><g
+                            id="SVGRepo_iconCarrier"> <path
+                                fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z"
+                                fill="#03811d"></path> </g></svg>lucas.goulart@wearedev.com.br
+                        </p>
+                    <p class="mb-4 leading-relaxed"><a
+                            href="https://github.com/theG0ulart" title="github"><svg class="inline mr-4 h-6" viewBox="0 0 20 20"
+                            version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            fill="#000000"><g id="SVGRepo_bgCarrier"
+                                stroke-width="0"></g><g
+                                id="SVGRepo_tracerCarrier"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"></g><g
+                                id="SVGRepo_iconCarrier"> <title>github
+                                    [#142]</title> <desc>Created with
+                                    Sketch.</desc> <defs> </defs> <g
+                                    id="Page-1" stroke="none"
+                                    stroke-width="1" fill="none"
+                                    fill-rule="evenodd"> <g
+                                        id="Dribbble-Light-Preview"
+                                        transform="translate(-140.000000, -7559.000000)"
+                                        fill="#03811d"> <g id="icons"
+                                            transform="translate(56.000000, 160.000000)">
+                                            <path
+                                                d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                                                id="github-[#142]"> </path>
+                                        </g> </g> </g> </g></svg>https://github.com/theG0ulart
+                            </a> </p>
+                    <p class="mb-4 leading-relaxed"><a href="https://www.linkedin.com/in/theg0ulart/"><svg class="inline mr-4 h-6" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg"><g
+                            id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round" stroke-linejoin="round"></g><g
+                            id="SVGRepo_iconCarrier"> <path
+                                d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
+                                fill="#03811d"></path> <path
+                                d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z"
+                                fill="#03811d"></path> <path
+                                d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z"
+                                fill="#03811d"></path> <path
+                                fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"
+                                fill="#03811d"></path> </g></svg>https://www.linkedin.com/in/theg0ulart/</a>
+                        </p>
+                    <div class="flex justify-center">
+                        <button
+                            class="inline-flex text-white bg-green-800 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                        <button
+                            class="ml-4 inline-flex text-gray-700 bg-green-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="text-green-300 body-font border-t flex items-center overflow-auto"
+            id="linguagens">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="text-center mb-10">
+                    <h1
+                        class="sm:text-3xl text-2xl font-medium text-center title-font text-green-300 mb-4">Linguagens</h1>
+                    <p
+                        class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Principais
+                        linguagens
+                        de programação que possuo conhecimento e já utilizei em
+                        projetos acadêmicos:
+                    </p>
+                </div>
+                <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+                    <div class="p-2 sm:w-1/2 w-full">
+                        <div
+                            class="bg-green-800 rounded flex p-4 h-full items-center">
+                            <svg fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="3"
+                                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                                viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                            <span class="title-font font-medium">HTML / CSS</span>
+                        </div>
+                    </div>
+                    <div class="p-2 sm:w-1/2 w-full">
+                        <div
+                            class="bg-green-800 rounded flex p-4 h-full items-center">
+                            <svg fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="3"
+                                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                                viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                            <span class="title-font font-medium">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <div class="p-2 sm:w-1/2 w-full">
+                        <div
+                            class="bg-green-800 rounded flex p-4 h-full items-center">
+                            <svg fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="3"
+                                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                                viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                            <span class="title-font font-medium">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="p-2 sm:w-1/2 w-full">
+                        <div
+                            class="bg-green-800 rounded flex p-4 h-full items-center">
+                            <svg fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="3"
+                                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                                viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                            <span class="title-font font-medium">JQuery</span>
+                        </div>
+                    </div>
+                    <div class="p-2 sm:w-1/2 w-full">
+                        <div
+                            class="bg-green-800 rounded flex p-4 h-full items-center">
+                            <svg fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="3"
+                                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                                viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                            <span class="title-font font-medium">Node.js</span>
+                        </div>
+                    </div>
+                    <div class="p-2 sm:w-1/2 w-full">
+                        <div
+                            class="bg-green-800 rounded flex p-4 h-full items-center">
+                            <svg fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="3"
+                                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                                viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                            <span class="title-font font-medium">Angular</span>
+                        </div>
+                    </div>
+                    <div class="p-2 sm:w-1/2 w-full">
+                        <div
+                            class="bg-green-800 rounded flex p-4 h-full items-center">
+                            <svg fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="3"
+                                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                                viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                            <span class="title-font font-medium">SQL (Query /
+                                T-SQL / T-Notify)</span>
+                        </div>
+                    </div>
+                    <div class="p-2 sm:w-1/2 w-full">
+                        <div
+                            class="bg-green-800 rounded flex p-4 h-full items-center">
+                            <svg fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="3"
+                                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                                viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                            <span class="title-font font-medium">GIT / GITHUB</span>
+                        </div>
+                    </div>
+
+                </div>
+                <button
+                    class="flex mx-auto mt-16 text-white bg-green-800 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+            </div>
+        </section>
+
+        <section
+            class="text-green-300 body-font border-t flex items-center" id="soft-skills">
+            <div class="container px-5 py-24 mx-auto">
+                <div
+                    class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
+                    <h1
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-green-300">Habilidades
+                        Pessoais</h1>
+                    <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Abaixo
+                        estão as principais habilidades pessoais
+                    </p>
+                </div>
+                <div class="flex flex-wrap m-4">
+                    <div class="xl:w-1/3 md:w-1/2 p-4">
+                        <div class="border border-gray-200 p-6 rounded-lg">
+                            <div
+                                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-200 text-indigo-500 mb-4">
+                                <svg class="w-6 h-6" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect x="11.7" y="6.6" transform="matrix(0.7071 0.7071 -0.7071 0.7071 17.0399 -4.1169)" fill="none" stroke="#03811d" stroke-width="2" stroke-miterlimit="10" width="3.6" height="23.9"></rect> <polyline fill="none" stroke="#03811d" stroke-width="2" stroke-miterlimit="10" points="18.9,16.1 20.9,18.1 23,16.1 25.9,16.1 25.9,13.1 28,11.1 25.9,9 25.9,6.1 23,6.1 20.9,4 18.9,6.1 15.9,6.1 15.9,9 13.9,11.1 15.9,13.1 "></polyline> <line fill="none" stroke="#03811d" stroke-width="2" stroke-miterlimit="10" x1="23" y1="26" x2="29" y2="26"></line> <line fill="none" stroke="#03811d" stroke-width="2" stroke-miterlimit="10" x1="26" y1="23" x2="26" y2="29"></line> <line fill="none" stroke="#03811d" stroke-width="2" stroke-miterlimit="10" x1="18" y1="23" x2="22" y2="23"></line> <line fill="none" stroke="#03811d" stroke-width="2" stroke-miterlimit="10" x1="20" y1="21" x2="20" y2="25"></line> </g></svg>
+                            </div>
+                            <h2
+                                class="text-lg text-green-300 font-medium title-font mb-2">Capacidade de solucionar Problemas</h2>
+                            <p class="leading-relaxed text-base">Com mais de 3 anos de experiência,
+                                possuo capacidade para resolver problemas num passe de mágica.</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/3 md:w-1/2 p-4">
+                        <div class="border border-gray-200 p-6 rounded-lg">
+                            <div
+                                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-200  mb-4">
+                                <svg class="w-6 h-6" fill="#03811d" viewBox="0 0 64 64" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title></title><rect height="2" width="6" x="8" y="22"></rect><rect height="2" width="6" x="50" y="22"></rect><rect height="5.99998" transform="translate(-0.7401 14.51471) rotate(-45)" width="2.00002" x="16.15074" y="5.15075"></rect><rect height="5.99998" transform="translate(-13.04167 44.21277) rotate(-44.99959)" width="2.00002" x="45.84923" y="34.84924"></rect><rect height="2.00002" transform="translate(-21.74042 23.21404) rotate(-45.00124)" width="5.99998" x="14.15076" y="36.84922"></rect><rect height="2.00002" transform="translate(7.95897 35.51555) rotate(-45.00124)" width="5.99998" x="43.84925" y="7.15073"></rect><rect height="5" width="2" x="31" y="2"></rect><path d="M35.00482,60H28.99518C28.892,55.51868,16.30585,52,2,52v4.5531l19,.94739-.05273.999L2,57.55493V62H62V57.55493l-18.94727.94458L43,57.50049l19-.94739V52C47.69415,52,35.108,55.51868,35.00482,60Z"></path><path d="M38,44a2,2,0,0,0-2-2H28a2,2,0,0,0,0,4h8A2,2,0,0,0,38,44Z"></path><path d="M28.66669,47a2.03333,2.03333,0,0,0,0,4h6.66662a2.03333,2.03333,0,0,0,0-4Z"></path><path d="M26,37.75l1.29,3.38h9.42L38,37.75a15,15,0,1,0-12,0Zm7-8.043A.99928.99928,0,0,1,33.293,29l5-5L39.707,25.41406,35,30.12109V39.707H33ZM25.707,24l5,5a.99928.99928,0,0,1,.293.707v10H29V30.12109l-4.707-4.707Z"></path></g></svg>
+                            </div>
+                            <h2
+                                class="text-lg text-green-300 font-medium title-font mb-2">
+                                Criatividade</h2>
+                            <p class="leading-relaxed text-base">Busco soluções criativas e fora da caixa para
+                                resolver os desafios propostos.</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/3 md:w-1/2 p-4">
+                        <div class="border border-gray-200 p-6 rounded-lg">
+                            <div
+                                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-200 mb-4">
+                                <svg class="w-6 h-6" fill="#03811d" viewBox="0 0 64 64" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title></title><rect height="6" width="19" x="23.00574" y="56"></rect><rect height="5.00001" transform="translate(-4.73979 10.43222) rotate(-45)" width="19.00002" x="0.72289" y="8.43754"></rect><rect height="19.00004" transform="translate(8.19277 41.39323) rotate(-45)" width="4.99998" x="51.56245" y="1.30705"></rect><path d="M44.55634,9.7066,41.865,9.59253a5.05767,5.05767,0,0,0-4.28314,1.43164l-5.50446,5.50446-5.75354-5.75354a3.8392,3.8392,0,0,0-3.85785-.90894A3.618,3.618,0,0,1,18.855,8.963l-.85388-.85388L7.39447,18.7157l1.728,1.728-.11408,2.69123A5.05776,5.05776,0,0,0,10.44,27.41809l9.61243,9.61243a4.98517,4.98517,0,0,1,1.69067-3.25891l-2.99493-2.99494.70709-.70709,3.12824,3.12823a4.94908,4.94908,0,0,1,1.42236-.54058V28.96332l-1.72217-1.72217.70709-.70715,1.01508,1.01507V22.19922a3.60983,3.60983,0,0,1,3.14258-3.625,3.506,3.506,0,0,1,.99078.0448l-1.22949-1.22949.70715-.7071L29.413,18.47858a3.54221,3.54221,0,0,1,3.40339-1.90827,3.60085,3.60085,0,0,1,3.1748,3.332,3.55741,3.55741,0,0,1,1.8252-.332,3.62038,3.62038,0,0,1,3.18945,3.66309v3.42383a5.00355,5.00355,0,0,1,3.8161,3.62518l2.78851-2.78851.7071.70715L45.00226,31.5163c.00012.01373.0036.02655.0036.04034v3.32007a3.96267,3.96267,0,0,0,2.37891-1.12848l6.84014-6.84015a3.839,3.839,0,0,0,.90888-3.85785,3.61818,3.61818,0,0,1,.9032-3.61108l.85388-.85388L46.2843,7.97864Z"></path><path d="M29.88043,21.68951a2.49081,2.49081,0,0,0-2.72583-2.18866,2.598,2.598,0,0,0-2.24225,2.62964V33.48785a4,4,0,0,0-4,4v9.67347a3.83915,3.83915,0,0,0,2.08521,3.3706,3.618,3.618,0,0,1,1.91479,3.192v1.20758h15V52.48785L41.896,50.66547a5.05755,5.05755,0,0,0,2.01635-4.041V31.48785a4,4,0,0,0-4-4V23.16528a2.62152,2.62152,0,0,0-2.27612-2.6676,2.49273,2.49273,0,0,0-2.68231,2.09906h.45843V38.0401h-1V22.59674h.5V20.16528a2.62152,2.62152,0,0,0-2.27612-2.6676,2.50036,2.50036,0,0,0-2.72388,2.49017v1.70166h.5V37.13287h-1V21.68951ZM25.31152,42.0401h-1v-8h1ZM39.41235,27.79834h1V38.2417h-1Z"></path></g></svg>
+                            </div>
+                            <h2
+                                class="text-lg text-green-300 font-medium title-font mb-2">Trabalho em equipe</h2>
+                            <p class="leading-relaxed text-base">Possuo facilidades para trabalhar com equipes,
+                               buscando colaborar para a entrega dos melhores resultados.</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/3 md:w-1/2 p-4">
+                        <div class="border border-gray-200 p-6 rounded-lg">
+                            <div
+                                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                                <svg fill="none" stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    class="w-6 h-6" viewBox="0 0 24 24">
+                                    <path
+                                        d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
+                                </svg>
+                            </div>
+                            <h2
+                                class="text-lg text-green-300 font-medium title-font mb-2">Melanchole</h2>
+                            <p class="leading-relaxed text-base">Fingerstache
+                                flexitarian street art 8-bit waist co, subway
+                                tile poke farm.</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/3 md:w-1/2 p-4">
+                        <div class="border border-gray-200 p-6 rounded-lg">
+                            <div
+                                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                                <svg fill="none" stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    class="w-6 h-6" viewBox="0 0 24 24">
+                                    <path
+                                        d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                                </svg>
+                            </div>
+                            <h2
+                                class="text-lg text-green-300 font-medium title-font mb-2">Bunker</h2>
+                            <p class="leading-relaxed text-base">Fingerstache
+                                flexitarian street art 8-bit waist co, subway
+                                tile poke farm.</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/3 md:w-1/2 p-4">
+                        <div class="border border-gray-200 p-6 rounded-lg">
+                            <div
+                                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                                <svg fill="none" stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    class="w-6 h-6" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                            </div>
+                            <h2
+                                class="text-lg text-green-300 font-medium title-font mb-2">Ramona
+                                Falls</h2>
+                            <p class="leading-relaxed text-base">Fingerstache
+                                flexitarian street art 8-bit waist co, subway
+                                tile poke farm.</p>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="flex mx-auto mt-16 text-white bg-green-800 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+            </div>
+        </section>
+
+        <section
+            class="text-green-300 body-font border-t flex items-center" id="projetos">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="text-center mb-20">
+                    <h1
+                        class="sm:text-3xl text-2xl font-medium text-center title-font text-green-300 mb-4">Raw
+                        Denim Heirloom Man Braid</h1>
+                    <p
+                        class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue
+                        bottle crucifix vinyl post-ironic four dollar toast
+                        vegan taxidermy. Gastropub indxgo juice poutine, ramps
+                        microdosing banh mi pug.</p>
+                </div>
+
+                <div class="flex flex-wrap m-4 items-center">
+                    <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
+                        <h2
+                            class="font-medium title-font tracking-widest text-green-300 mb-4 text-sm text-center sm:text-left">SHOOTING
+                            STARS</h2>
+                        <nav
+                            class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>First Link
+                            </a>
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Second Link
+                            </a>
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Third Link
+                            </a>
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Fourth Link
+                            </a>
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Fifth Link
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
+                        <h2
+                            class="font-medium title-font tracking-widest text-green-300 mb-4 text-sm text-center sm:text-left">THE
+                            400 BLOWS</h2>
+                        <nav
+                            class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>First Link
+                            </a>
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Second Link
+                            </a>
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Third Link
+                            </a>
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Fourth Link
+                            </a>
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Fifth Link
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
+                        <h2
+                            class="font-medium title-font tracking-widest text-green-300 mb-4 text-sm text-center sm:text-left">THE
+                            CATALYZER</h2>
+                        <nav
+                            class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>First Link
+                            </a>
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Second Link
+                            </a>
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Third Link
+                            </a>
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Fourth Link
+                            </a>
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Fifth Link
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
+                        <h2
+                            class="font-medium title-font tracking-widest text-green-300 mb-4 text-sm text-center sm:text-left">NEPTUNE</h2>
+                        <nav
+                            class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>First Link
+                            </a>
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Second Link
+                            </a>
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Third Link
+                            </a>
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Fourth Link
+                            </a>
+                            <a>
+                                <span
+                                    class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3"
+                                        class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Fifth Link
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+                <button
+                    class="flex mx-auto mt-16 text-white bg-green-800 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+            </div>
+        </section>
+
+    </body>
+</html>
